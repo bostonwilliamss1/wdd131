@@ -1,7 +1,17 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+#byui-idaho {
+    margin: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#byui-idaho h4 {
+    border-bottom: 1px solid #919191;
 }
 
 body {
@@ -10,51 +20,54 @@ body {
     line-height: 1.6;
 }
 
-h1 {
-    text-align: center;
-    letter-spacing: 2px;
-    font-weight: 200;
+.dark {
+    background-color: #333;
+    color: white;
+
 }
 
-h4{
+.dark h4 {
+    color: #A0D4ED; 
+}
+
+h1 {
+    font-weight: 200;
+    letter-spacing: 2px;
     text-align: center;
+}
+
+h4 {
     color: #006EB6;
-    margin-bottom: 20px;
     letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 img {
     display: block;
     margin: 0 auto;
+    margin-top: 50px;
     max-width: 100%;
     width: 150px;
-    margin-top: 50px;
-}
-
-.main-content {
-    max-width: 800px;
-    margin: 10px auto 10px;
-    padding: 100px;
-    border: 1px solid grey;
-
-}
-
-#byui-idaho {
-    text-align: center;
-    margin-bottom: 20px;
-    margin: 20px;
-}
-
-#byui-idaho h4 {
-    border-bottom: 1px solid #919191;
 }
 
 li {
     margin-bottom: 10px;
-    padding: 5px;
     margin-left: 50px;
+    padding: 5px;
+}
+
+.main-content {
+    border: 1px solid grey;
+    margin: 10px auto 10px;
+    max-width: 800px;
+    padding: 100px;
 }
 
 p {
     padding: 10px;
+}
+
+#select {
+    text-align: center;
 }
