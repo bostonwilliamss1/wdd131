@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
- :root {
- --primary-color: #52489c;
- --secondary-color: #59c3c3;
- --accent-color: #f45b69;
- --text-dark: #333;
- --text-light: #ebebeb;
- --primary-font: Arial, Helvetica,sans-serif;
- --secondary-font: Mooli, san-serif;
+
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: Mooli, sans-serif;
 }
- 
+
 a {
     color: white;
 }
@@ -17,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:rgb(204, 204, 204);
+    background-color: rgb(204, 204, 204);
 }
 
 footer {
@@ -49,8 +50,8 @@ figure {
 
 .gallery {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
     align-items: center;
     margin: 0;
     margin-bottom: 10px;
@@ -58,11 +59,12 @@ figure {
 }
 
 .gallery figure {
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     padding: 0;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.517);
+    border: 5px solid #fff
 }
 
 .menu-button {
@@ -78,11 +80,29 @@ li {
     padding: 75px;
 }
 
-@media screen and (max-width: 700px) {
+.menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 auto;
+    color: white;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 1000px) {
     .gallery {
         display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         margin: 0;
         padding: 0;
     }
@@ -102,21 +122,36 @@ li {
         padding: 0;
     }
 
-    .menu-button {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-        margin: 0 auto;
-        color: white;
-    }
-
-    .menu li {
-        margin-right: 20px;
+    .menu-button{
+        display: none;
     }
     
-    .menu li:last-child {
-        margin-right: 0;
+}
+
+@media screen and (min-width: 700px) and (max-width: 999px) {
+    .gallery {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    .gallery figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.517);
+    }
+
+    .gallery img {
+        height: 250px;
+        width: 250px;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-button{
+        display: none;
     }
 }
