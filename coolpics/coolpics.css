@@ -67,6 +67,10 @@ figure {
     border: 5px solid #fff
 }
 
+main {
+    margin-bottom: 15px;
+}
+
 .menu-button {
     display: none;
 }
