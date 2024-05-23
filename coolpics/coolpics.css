@@ -68,15 +68,11 @@ figure {
     align-items: center;
     padding: 0;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.517);
-    border: 5px solid #fff
+    border: 5px solid #fff;
 }
 
 main {
     margin-bottom: 15px;
-}
-
-.menu-button {
-    display: none;
 }
 
 ul {
@@ -84,12 +80,11 @@ ul {
 }
 
 li {
-    display: inline;
-    padding: 75px;
+    display: flex;
 }
 
 .menu-button {
-    display: block;
+    display: flex;
     background: none;
     border: none;
     font-size: 24px;
@@ -99,7 +94,12 @@ li {
 }
 
 .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     padding: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .viewer {
@@ -132,11 +132,6 @@ li {
     cursor: pointer;
 }
 
-.viewer-img {
-    width: 250px;
-    height: 250px;
-}
-
 @media screen and (min-width: 1000px) {
     .gallery {
         display: grid;
@@ -165,12 +160,24 @@ li {
         display: block;
     }
 
-    .menu-button{
+    .menu-button {
         display: none;
     }
 
     .menu {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        height: auto;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
     
     .viewer {
@@ -180,6 +187,12 @@ li {
     .viewer-img {
         width: 250px;
         height: 250px;
+    }
+
+    .menu li {
+        text-align: center;
+        padding:0 50px;
+        margin: 0;
     }
 }
 
@@ -206,13 +219,7 @@ li {
         margin: 0;
         padding: 0;
     }
-    .menu-button{
-        display: none;
-    }
 
-    .hide {
-        display: block;
-    }
     
     .viewer-img {
         width: 250px;
