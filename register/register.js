@@ -1,4 +1,4 @@
-import { participantTemplate, successTemplate } from './Templates.js';
+import { participantTemplate, successTemplate } from './templates.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     let participantCount = 1;
