@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
-
     <link rel="stylesheet" href="recipes.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <meta name="author" content="Boston Williams">
-
     <meta property="og:title" content="Recipe Book">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Discover a variety of delicious recipes on Recipe Book">
@@ -20,24 +18,26 @@
 <body>
 <header>
 <div class="title">
-<img src="images/recipe-book.png" alt="search bar">
+<img src="images/recipe-book.png" alt="Recipe Book Logo">
 <h1>Recipe Book</h1>
 </div>
 <div class="search-container">
-<form action="/search" method="GET">
-    <input type="text" name="q" class="search-input" placeholder="Find a recipe">
-    <button type="submit" class="search-button"><img src="images/search.svg"></button>
-</form>
+    <form id="search-form">
+        <input type="text" name="q" id="search-input" class="search-input" placeholder="Find a recipe">
+        <button type="button" id="search-button" class="search-button">
+            <img src="images/search.svg" alt="Search">
+        </button>
+    </form>
 </div>
 </header>
 <main>
-    <div class="recipes-container"></div>
+    <div id="recipe-container" class="recipes-container"></div>
 </main>
 <footer>
 <div class="social">
-    <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
-    <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
-    <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+    <a href="#"><img src="images/instagram_icon.svg" alt="Instagram icon"></a>
+    <a href="#"><img src="images/youtube_icon.svg" alt="YouTube icon"></a>
+    <a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest icon"></a>
 </div>
 <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
 </footer>
