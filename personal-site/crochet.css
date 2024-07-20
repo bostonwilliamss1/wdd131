@@ -1,0 +1,275 @@
+:root {
+    --primary-color: #E5F4E3;
+    --secondary-color: #003F91;
+    --accent1-color: #5DA9E9;
+    --accent2-color: white;
+    --heading-font: "Merriweather";
+    --paragraph-font: "Roboto";
+    --headline-color-on-white: var(--primary-color);
+    --headline-color-on-color: white;
+    --paragraph-color-on-white: var(--primary-color);
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 15px;
+    width: 100%;
+    color: white;
+}
+
+.nav-logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+nav {
+    margin: 10px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+}
+
+header {
+    font-family: var(--secondary-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+    padding: 15px;
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+.pattern-card img {
+    width: 80%;
+}
+
+.crochetPatterns-container {
+    border: 2px solid var(--secondary-color);
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #E5F4E3;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.crochetPatterns-container h2 {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+}
+
+.search-button {
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+
+.search-button img {
+    height: 10px;
+    width: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tags-container {
+    display: flex;
+}
+
+.tag {
+    border: 2px solid var(--accent1-color);
+    margin-right: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.title img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.crochet-card {
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 15px;
+}
+
+.crochet-card img {
+    max-width: 90%; /* Adjust the max-width as needed */
+    height: auto;
+    align-self: center;
+    padding-top: 15px;
+}
+
+.crochet-details {
+    padding: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent1-color);
+}
+
+@media (min-width: 400px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .search-container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .search-input {
+        flex-grow: 1;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .search-container form {
+        width: 100%;
+        display: flex;
+    }
+
+    .title {
+        flex-direction: row;
+    }
+
+    .tags-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .crochet-card h2 {
+        margin-top: 10px;
+    }
+
+    .crochetPatterns-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
